@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package office;
+
+service OfficeService {
+  rpc ListenOffices(Empty) returns (stream Office);
+}
+
+message Office {
+  string id = 1;
+  string name = 2;
+}
+
+message Empty {}
