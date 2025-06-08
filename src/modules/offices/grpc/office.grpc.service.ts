@@ -37,6 +37,7 @@ export class OfficeClientGrpcService {
         console.log('Completed');
       }
     });
+    console.log('Listening for offices...');
   }
 }
 
